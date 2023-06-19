@@ -48,6 +48,7 @@
   cursor: pointer;
 }
 .list-item {
+  width: 90%;
   display: flex;
   margin: 20px 0;
   padding: 3px;
@@ -102,24 +103,19 @@ button:focus {
 .hai {
   margin-top: 20px;
 }
-
-@media screen and (max-width: 447px) {
-  .app-wrapper {
-    background-color: #12343b;
-    height: 650px;
-    width: 400px;
-
-    padding: 9px;
-    overflow: hidden;
-    box-sizing: border-box;
-    border-radius: 10px;
-    box-shadow: 3px 6px 40px rgb(77, 77, 77);
-    margin-bottom: 10px;
+@media screen and (max-width: 469px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
   }
-
   .task-input {
     outline: none;
     width: 260px;
+    padding: 15px;
+    margin-right: 0px;
     font-size: 28px;
     color: #ccc;
     background-color: #000000;
@@ -128,55 +124,48 @@ button:focus {
   }
   .button-add {
     width: 290px;
-    margin-top: 20px;
-    margin-right: 25px;
+    padding: 15px 15px;
     font-size: 20px;
     border-radius: 10px;
     border: 0;
     background-color: #f1af71;
     cursor: pointer;
   }
-  .form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .list {
-    width: 228px;
-    background-color: #12343b;
-    border: none;
-    color: #ccc;
-    font-size: 25px;
-    padding-left: 3px;
-  }
   .list-item {
+    width: 90%;
     display: flex;
     margin: 20px 0;
     padding: 3px;
     border: solid 1px rgb(255, 255, 255);
     border-radius: 10px;
+    max-height: 30px;
   }
-}
-
-@media screen and (min-width: 390px) {
   .app-wrapper {
     background-color: #12343b;
     height: 650px;
-    width: 370px;
-
-    padding: 9px;
+    width: 100%;
+    padding: 12px;
     overflow: hidden;
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 3px 6px 40px rgb(77, 77, 77);
     margin-bottom: 10px;
   }
+}
 
+@media screen and (max-width: 398px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
   .task-input {
     outline: none;
     width: 260px;
-
+    padding: 15px;
+    margin-right: 0px;
     font-size: 28px;
     color: #ccc;
     background-color: #000000;
@@ -185,87 +174,42 @@ button:focus {
   }
   .button-add {
     width: 290px;
-    margin-top: 20px;
-    margin-right: 25px;
+    padding: 15px 15px;
     font-size: 20px;
     border-radius: 10px;
     border: 0;
     background-color: #f1af71;
     cursor: pointer;
   }
-  .form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .list {
-    width: 200px;
-    background-color: #12343b;
-    border: none;
-    color: #ccc;
-    font-size: 23px;
-    padding-left: 3px;
-  }
   .list-item {
+    width: 90%;
     display: flex;
-    /* margin: 20px 0; */
+    margin: 20px 0;
     padding: 3px;
     border: solid 1px rgb(255, 255, 255);
     border-radius: 10px;
-    /* height: 80px; */
+    max-height: 30px;
   }
-  .button-main {
-    margin-left: 50px;
-  }
-  .fa {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .fa {
-    font-size: 20px;
-  }
-  .task-input {
-    outline: none;
-    width: 220px;
-    /* padding: 15px; */
-    /* margin-right: 25px; */
-    font-size: 28px;
-    color: #ccc;
-    background-color: #000000;
-    border: 1px solid #c89666;
+  .app-wrapper {
+    background-color: #12343b;
+    height: 650px;
+    width: 100%;
+    padding: 12px;
+    overflow: hidden;
+    box-sizing: border-box;
     border-radius: 10px;
-  }
-  .button-add {
-    width: 250px;
-    margin-top: 20px;
-    /* padding: 15px 15px; */
-    margin-right: 25px;
-    font-size: 20px;
-    border-radius: 10px;
-    border: 0;
-    background-color: #f1af71;
-    cursor: pointer;
-  }
-  .button-complete {
-    color: #ff6c6c;
-    margin-right: 10px;
-  }
-  .button-edit {
-    color: #e2db29;
-    margin-right: 10px;
-  }
-  .button-delete {
-    color: lightseagreen;
+    box-shadow: 3px 6px 40px rgb(77, 77, 77);
+    margin-bottom: 10px;
   }
   .list {
-    width: 228px;
+    width: 60%;
     background-color: #12343b;
     border: none;
     color: #ccc;
     font-size: 20px;
-    padding-left: 3px;
+    padding-left: 10px;
+  }
+  .fa {
+    font-size: 23px;
   }
 }
