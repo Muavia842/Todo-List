@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Muavia842.github.io/Todo-List/static/css/main.af5a1530.css",
+    "main.js": "/Muavia842.github.io/Todo-List/static/js/main.35ce1f21.js",
+    "index.html": "/Muavia842.github.io/Todo-List/index.html",
+    "main.af5a1530.css.map": "/Muavia842.github.io/Todo-List/static/css/main.af5a1530.css.map",
+    "main.35ce1f21.js.map": "/Muavia842.github.io/Todo-List/static/js/main.35ce1f21.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af5a1530.css",
+    "static/js/main.35ce1f21.js"
+  ]
+}
